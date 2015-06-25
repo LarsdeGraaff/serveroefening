@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="java.util.List" %>
 <%@ page import="be.vdab.MovieRepository" %>
 <%@ page import="be.vdab.Movie" %>
@@ -16,6 +17,7 @@
 <body>
 
 <table border=2px>
+    <h1>java</h1>
     <%
         List<Movie> movies = (List<Movie>) request.getAttribute("filmLijst");
 
@@ -23,6 +25,20 @@
            out.println("<tr><td>" + movie.getTitle() + "</td><td>" + movie.getDirector() + "</td><td>" + movie.getYear() + "</td></tr>");
         }
     %>
+</table>
+<table border="2px">
+    <h1>expressies</h1>
+    <c:forEach items="${filmLijst}" var="f">
+        <tr><td>${f.title}</td><td>${f.director}</td></tr>
+
+    </c:forEach>
+</table>
+
+
+<table border="1px">
+
+
+
 </table>
 </body>
 </html>

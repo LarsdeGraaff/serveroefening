@@ -46,5 +46,11 @@
             <version>2.0</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+            <!-- not provided, jstl is not part of tomcat-->
+        </dependency>
     </dependencies>
 </project>
