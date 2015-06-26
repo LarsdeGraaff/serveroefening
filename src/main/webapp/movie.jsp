@@ -26,19 +26,14 @@
         }
     %>
 </table>
+
 <table border="2px">
     <h1>expressies</h1>
     <c:forEach items="${filmLijst}" var="f">
-        <tr><td>${f.title}</td><td>${f.director}</td></tr>
-
+        <tr><td>${f.title}</td><td>${f.director}</td><td>${f.year}</td></tr>
     </c:forEach>
 </table>
 
 
-<table border="1px">
-
-
-
-</table>
 </body>
 </html>
